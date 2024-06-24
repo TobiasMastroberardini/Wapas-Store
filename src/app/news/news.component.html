@@ -1,0 +1,8 @@
+<div class="container">
+    <h1>NOVEDADES</h1>
+    @for(product of products; track product.name){
+    <app-product-card [product]="product"></app-product-card>
+    }@empty {
+    <p>No hay productos en oferta</p>
+    }
+</div>
